@@ -1,0 +1,2 @@
+# -DETECTING-PHISHING-URLS-A-PRACTICAL-APPROACH-USING-LOGIN-URLS-
+This project provides a practical machine learning approach to detecting phishing URLs, with a focus on those mimicking login pages. We analyze various URL features to classify websites as legitimate or malicious. The repository contains the full pipeline, from data collection and feature engineering to model training and evaluation.
