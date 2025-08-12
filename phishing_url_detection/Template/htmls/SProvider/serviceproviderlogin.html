@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+            background: url("{% static 'bg.jpg' %}");
+            background-color: #eee;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #812;
+            padding: 10px;
+        }
+        .logo {
+            height: 60px;
+        }
+        .title {
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            font-family: 'Fredoka One', cursive;
+        }
+        .container-fluid {
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="{% static 'logo.jpg' %}" alt="SSITS Logo" class="logo">
+    <div class="title">Sri Sai Institute Of Technology and Science</div>
+    <img src="{% static 'NAAC-Grade.jpg' %}" alt="NAAC Grade" class="logo">
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="text-center">Phishing URL Detection - A Real Case Scenario Through Login URLs</h2>
+        <hr>
+        <form method="POST" role="form">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" name="username" placeholder="User Name" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div>
+                <input type="submit" name="submit1" class="btn btn-md" value="Login">
+            </div>
+        </form>
+        <br>
+        <button class="btn btn-lg">
+            <a href="{% url 'login' %}">User Login</a>
+        </button>
+    </div>
+</div>
+
+</body>
+</html>

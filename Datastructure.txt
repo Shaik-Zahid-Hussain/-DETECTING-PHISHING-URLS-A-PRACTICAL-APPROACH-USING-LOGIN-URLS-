@@ -1,0 +1,25 @@
+Phishing URL Detection A Real Case Scenario Through Login URLs
+
+IEEE Transaction on Machine Learning,Volume:10,Issue Date:18.April.2022
+
+Cybercrime,login,machine learning,phishing detection,URL.
+
+Phishing_URL_Detection
+
+
+phishing_url_detection
+
+
+
+url_detection_type
+
+
+url_name
+Prediction
+
+
+
+
+
+
+
